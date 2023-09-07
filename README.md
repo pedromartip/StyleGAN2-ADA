@@ -1,7 +1,7 @@
 ## This is a copy from an original repo of StyleGAN2-ADA of NVlabs
 Pedro Marti
 #### Notes
-A requirements.txt document was added to create the environment for the StyleGan2-ADA. 
+A `requirements.txt` document was added to create the environment for the StyleGan2-ADA. 
 
 Specific modifications in `grid_sample_gradfix.py` and `conv2d_gradfix.py`. This modification fixes Issue `ERROR: Bug error warnings.warn(f'conv2d_gradfix not supported on PyTorch {torch.__version__}. Falling back to torch.nn.functional.conv2d().')` and `ERROR: conv2d_gradfix not supported on pytorch 1.10`. 
 
