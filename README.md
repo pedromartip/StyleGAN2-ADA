@@ -7,6 +7,8 @@ Specific modifications in `grid_sample_gradfix.py` and `conv2d_gradfix.py`. This
 
 Once the above errors were resolved, the following error appeared [TypeError: 'tuple' object is not callable], this was fixed by extracting the `op`.
 
+*These corrections was made specially to run this repo on Google Colab.*
+
 # ----------- ORIGINAL README -----------
 ## StyleGAN2-ADA &mdash; Official PyTorch implementation
 
