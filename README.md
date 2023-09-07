@@ -3,7 +3,9 @@ Pedro Marti
 #### Notes
 A requirements.txt document was added to create de environment for the StyleGan2-ADA. 
 
-Specific modifications in `grid_sample_gradfix.py` and `conv2d_gradfix.py`. This modification fixes Issue [Bug error warnings.warn(f'conv2d_gradfix not supported on PyTorch {torch.__version__}. Falling back to torch.nn.functional.conv2d().') #195](https://github.com/NVlabs/stylegan2-ada-pytorch/issues/195) and [conv2d_gradfix not supported on pytorch `1.10` #196](https://github.com/NVlabs/stylegan2-ada-pytorch/issues/196). And [TypeError: 'tuple' object is not callable]
+Specific modifications in `grid_sample_gradfix.py` and `conv2d_gradfix.py`. This modification fixes Issue [Bug error warnings.warn(f'conv2d_gradfix not supported on PyTorch {torch.__version__}. Falling back to torch.nn.functional.conv2d().')] and [conv2d_gradfix not supported on pytorch `1.10`]. 
+
+Once the above errors were resolved, the following error appeared [TypeError: 'tuple' object is not callable], this was fixed by extracting the 'op'.
 
 # ----------- ORIGINAL README -----------
 ## StyleGAN2-ADA &mdash; Official PyTorch implementation
