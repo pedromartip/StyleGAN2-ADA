@@ -7,8 +7,15 @@ Specific modifications in `grid_sample_gradfix.py` and `conv2d_gradfix.py`. This
 
 Once the above errors were resolved, the following error appeared [TypeError: 'tuple' object is not callable], this was fixed by extracting the `op`.
 
-**These corrections was made specially to run this repo on Google Colab.**
-
+**These corrections were made specially to run this repo on Google Colab.**
+#### Environment
+- cuda-toolkit 11.8.9 (conda install -c "nvidia/label/cuda-11.8.0" cuda-toolkit)
+- click
+- requests
+- tdqm
+- pyspng
+- ninja
+- imageio-ffmpeg==0.4.3
 # ----------- ORIGINAL README -----------
 ## StyleGAN2-ADA &mdash; Official PyTorch implementation
 
